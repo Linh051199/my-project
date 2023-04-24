@@ -1,0 +1,113 @@
+.wrapper {
+  width: 100%;
+  background-image: url("../../../assets/images/bgFooter.jpg");
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  width: 564px;
+  line-height: 2;
+  color: var(--text-color-white);
+}
+
+.footer__companyName {
+  font-size: var(--font-size18);
+}
+
+.footer__companyLocation {
+  font-size: var(--font-size16);
+}
+
+.footer__companyPhone {
+  font-size: var(--font-size16);
+}
+
+.footer__companyEmail {
+  font-size: var(--font-size16);
+}
+
+.footer__companyWebsite {
+  font-size: var(--font-size16);
+}
+
+.footer__companyConnect {
+  font-size: var(--font-size16);
+}
+
+.footer__companyConnectButtons {
+  display: flex;
+  font-size: var(--font-size24);
+}
+
+.footer__companyConnectButton {
+  margin: 0 10px;
+}
+
+.footer__companyConnectButton:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.footer__companyCheckedImg {
+  width: 150px;
+  height: 57px;
+  background-image: url(../../../assets/images/bct.png);
+  margin-top: 20px;
+}
+
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  line-height: 2;
+  color: var(--text-color-white);
+}
+
+.footer__help {
+  font-size: var(--font-size18);
+}
+
+.footer__hotLine {
+  font-size: var(--font-size16);
+}
+
+.footer__number {
+  font-size: var(--font-size20);
+  color: #00f9ff;
+}
+
+.footer__email {
+  font-size: var(--font-size24);
+}
+
+.footer__work {
+  font-size: var(--font-size16);
+}
+
+.footer__workTime {
+  font-size: var(--font-size16);
+}
+
+.footer__login {
+  font-size: var(--font-size16);
+}
+
+.footer__loginInput {
+  font-size: var(--font-size18);
+  margin-top: 20px;
+}
+.footer__input {
+  width: 310px;
+  height: 30px;
+  border-radius: 6px;
+  font-size: var(--font-size16);
+  outline: none;
+}

@@ -1,0 +1,57 @@
+.wrapper {
+  display: flex;
+  margin: 20px;
+  width: 500px;
+  height: 254px;
+}
+
+.tour__image {
+  flex: 1;
+  width: 210px;
+  height: 254px;
+}
+
+.tour__info {
+  flex: 2;
+  padding: 10px 20px;
+  line-height: 1.4;
+  background-color: #fff;
+  color: #575757;
+}
+
+.tour__info__icon {
+  display: inline-block;
+  width: 20px;
+}
+
+.tour__info__name {
+  margin-bottom: 10px;
+  font-size: var(--font-size20);
+  font-weight: var(--font-weight-medium);
+}
+
+.tour__info__view {
+  margin-bottom: 10px;
+  font-size: var(--font-size14);
+}
+
+.tour__info__location {
+  margin-bottom: 10px;
+  font-size: var(--font-size14);
+}
+
+.tour__info__time {
+  margin-bottom: 10px;
+  font-size: var(--font-size14);
+}
+
+.tour__info__day {
+  margin-bottom: 20px;
+  font-size: var(--font-size14);
+}
+
+.tour__info__price {
+  color: #db2128;
+  font-size: var(--font-size18);
+  font-weight: var(--font-weight-medium);
+}

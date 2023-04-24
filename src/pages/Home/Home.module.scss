@@ -1,0 +1,62 @@
+.wrapper {
+}
+
+.home__bgImage {
+  background-image: url("../../assets/images/homeBG.png");
+  height: 879px;
+}
+
+.home__combo__hashtag {
+  margin: 50px 0 0 0;
+  text-align: center;
+  font-size: var(--font-size18);
+  font-weight: var(--font-weight-medium);
+  color: #9a9a9a;
+}
+
+.home__combo__title {
+  margin: 10px 0 30px 0;
+  text-align: center;
+  font-size: var(--font-size32);
+  font-weight: var(--font-weight-bold);
+  color: #555555;
+}
+
+.home__combo {
+}
+
+.home__combo__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px calc((100% - (350px * 3)) / 3);
+}
+
+.home__combo__item {
+  flex: 0 0 350px;
+}
+
+.home__tour {
+  width: 100%;
+  background-image: url("../../assets/images/bien.jpg");
+}
+
+.home__tour__list {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  // align-items: center;
+  // margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px calc((100% - (570px * 2)) / 2);
+}
+
+.home__tour__item {
+  // padding: 10px;
+  // flex: 50%;
+
+  flex: 0 0 570px;
+}

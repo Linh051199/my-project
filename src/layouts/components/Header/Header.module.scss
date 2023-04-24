@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0e0e0e;
+}
+
+.logo {
+  margin: 0 50px 0 300px;
+}
+
+.logo__img {
+  height: 94px;
+}
+
+.sidenav {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin-right: 300px;
+}
+
+.sidenav__item {
+  padding: 15px;
+  font-size: var(--font-size16);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-color-white);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}

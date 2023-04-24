@@ -1,0 +1,40 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  width: 330px;
+  height: 330px;
+  background-color: #ccc;
+  margin: 20px 20px;
+  border-radius: 6px;
+  border: 0.6px solid rgba(128, 128, 128, 0.516);
+
+  background-image: url("http://dulich14.maugiaodien.com/wp-content/uploads/2021/05/phuquoc.png");
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+.wrapper:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.combo__title,
+.combo__number {
+  position: absolute;
+  left: 20px;
+  color: var(--text-color-white);
+  text-transform: uppercase;
+  text-shadow: 2px 2px 7px #000000;
+}
+
+.combo__title {
+  bottom: 70px;
+  font-size: var(--font-size24);
+  font-weight: var(--font-weight-bold);
+}
+
+.combo__number {
+  bottom: 30px;
+  font-size: var(--font-size18);
+  font-weight: var(--font-weight-medium);
+}
