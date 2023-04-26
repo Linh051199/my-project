@@ -99,6 +99,7 @@ function HomePage() {
         <div className={cx("home__tour__list")}>
           {dataTour.map((item) => (
             <Tour
+              key={item.id}
               width="600px"
               height="300px"
               data={item}

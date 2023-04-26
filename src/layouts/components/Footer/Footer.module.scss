@@ -1,6 +1,7 @@
 .wrapper {
   width: 100%;
   background-image: url("../../../assets/images/bgFooter.jpg");
+  background-size: cover;
 }
 
 .footer {
@@ -121,5 +122,18 @@
   &.footer__sendEmailIcon:hover {
     cursor: pointer;
     opacity: 0.7;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer__right {
+    margin-top: 50px;
   }
 }

@@ -46,21 +46,21 @@ function ComboPage() {
         <ComboTourList
           data={dataPhuQuoc}
           title="Phú Quốc"
-          src="http://dulich14.maugiaodien.com/wp-content/uploads/2021/05/coto.png"
+          src="https://statics.vntrip.vn/data-v2/data-guide/img_content/1470302452_anh-5.jpg"
           width="250px"
           height="220px"
         />
         <ComboTourList
           data={dataQuangNinh}
           title="Quảng Ninh"
-          src="http://dulich14.maugiaodien.com/wp-content/uploads/2021/05/quynhon.png"
+          src="https://haycafe.vn/wp-content/uploads/2022/01/Hinh-anh-Ha-Long.jpg"
           width="250px"
           height="220px"
         />
         <ComboTourList
           data={dataNinhBinh}
           title="Ninh Bình"
-          src="http://dulich14.maugiaodien.com/wp-content/uploads/2021/05/sapa.png"
+          src="https://motogo.vn/wp-content/uploads/2019/10/a2_IENS.jpg"
           width="250px"
           height="220px"
         />
