@@ -64,8 +64,8 @@ function HomePage() {
               className={cx("home__combo__item")}
               title={item.title}
               number={item.number}
-              width="350px"
-              height="350px"
+              width="330px"
+              height="330px"
             />
           ))}
 
@@ -76,8 +76,8 @@ function HomePage() {
               className={cx("home__combo__item")}
               title={item.title}
               number={item.number}
-              width="350px"
-              height="350px"
+              width="330px"
+              height="330px"
             />
           ))}
 
@@ -88,8 +88,8 @@ function HomePage() {
               className={cx("home__combo__item")}
               title={item.title}
               number={item.number}
-              width="350px"
-              height="350px"
+              width="330px"
+              height="330px"
             />
           ))}
         </div>
