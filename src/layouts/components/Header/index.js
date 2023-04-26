@@ -4,9 +4,20 @@ import classNames from "classnames/bind";
 
 import styles from "./Header.module.scss";
 import config from "../../../config";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const cx = classNames.bind(styles);
 function Header() {
+  const [showMenu, setShowMenu] = React.useState(true);
+
+  const handleClickShowMenu = () => {
+    console.log("toggle");
+    setShowMenu(!showMenu);
+  };
+
+  const classes = cx(showMenu ? "sidenav" : "sidenav__responsive");
+
   return (
     <div className={cx("wrapper")}>
       <div className={cx("logo")}>
@@ -18,7 +29,7 @@ function Header() {
           />
         </Link>
       </div>
-      <div className={cx("sidenav")}>
+      <div className={classes}>
         <Link className={cx("sidenav__item")} to={config.routes.home}>
           Trang Chủ
         </Link>
@@ -42,6 +53,14 @@ function Header() {
         <Link className={cx("sidenav__item")} to={config.routes.lienHe}>
           Liên hệ
         </Link>
+      </div>
+      )
+      <div className={cx("sivenav__media")} onClick={handleClickShowMenu}>
+        <FontAwesomeIcon
+          className={cx("sivenav__mediaBtn")}
+          icon={faBars}
+          id="check"
+        />
       </div>
     </div>
   );

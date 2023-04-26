@@ -1,2 +1,10 @@
-.wrapper {
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 100px;
+  background-image: url(../../assets/images/BGfeedback.jpg);
+  background-size: cover;
+}
+.tour__item {
+  border-radius: 5px;
 }

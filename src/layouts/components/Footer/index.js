@@ -9,6 +9,7 @@ import {
   faTwitterSquare,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 const cx = classNames.bind(styles);
 function Footer() {
@@ -51,23 +52,33 @@ function Footer() {
 
         <div className={cx("footer__right")}>
           <div className={cx("footer__help")}>HỖ TRỢ KHÁCH HÀNG</div>
-          <div className={cx("footer__hotLine")}>Đường dây nóng:</div>
-          <div className={cx("footer__number")}>0898 661 xxx</div>
-          <div className={cx("footer__email")}>Email: info@gmail.vn</div>
-          <div className={cx("footer__work")}>GIỜ LÀM VIỆC</div>
-          <div className={cx("footer__workTime")}>
-            8h đến 22h (T2 - T7) 8h đến 17h30h (CN)
+          <div className={cx("footer__hotLine")}>
+            Đường dây nóng:{" "}
+            <span className={cx("footer__number")}>0898 661 xxx</span>
           </div>
+
+          <div className={cx("footer__email")}>Email: info@gmail.vn</div>
+          <div className={cx("footer__work")}>
+            GIỜ LÀM VIỆC:{" "}
+            <span className={cx("footer__workTime")}>
+              8h đến 22h (T2 - T7) 8h đến 17h30h (CN)
+            </span>
+          </div>
+
           <div className={cx("footer__login")}>
             ĐĂNG KÝ EMAIL ĐỂ NHẬN THÔNG TIN
           </div>
 
-          <div>
+          <div className={cx("footer__sendEmail")}>
             <input
               className={cx("footer__input")}
               type="text"
               placeholder=" Email của bạn"
             ></input>
+            <FontAwesomeIcon
+              className={cx("footer__sendEmailIcon")}
+              icon={faPaperPlane}
+            />
           </div>
         </div>
       </div>

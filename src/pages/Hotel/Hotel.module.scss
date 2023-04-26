@@ -1,2 +1,63 @@
-.wrapper {
+.content {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../assets/images/BGfeedback.jpg);
+  margin: 20px;
+}
+
+.hotel__item {
+  display: flex;
+  width: 100%;
+  margin: 50px 0;
+}
+.hotel__img {
+  width: 468px;
+  height: 262px;
+  border-radius: 6px;
+  border: 0.6px solid #333;
+}
+.hotel__content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 40px;
+  line-height: 1.6;
+}
+.hotel__name {
+  font-size: var(--font-size20);
+  margin-bottom: 20px;
+}
+
+.starIcon {
+  width: 20px;
+}
+
+.hotel__location {
+  font-size: var(--font-size16);
+}
+
+.hotel__contactBtn {
+  margin-top: 50px;
+  font-size: var(--font-size16);
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: red;
+  color: var(--text-color-white);
+}
+
+.hotel__contactBtn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+  .hotel__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .hotel__img {
+    width: 100%;
+    height: auto;
+  }
 }

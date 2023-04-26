@@ -1,2 +1,84 @@
-.wrapper {
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 100px 0;
+}
+
+.contact__infoLeft {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+  margin: 0 20px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.contact__companyName {
+  font-size: var(--font-size20);
+}
+
+.contact__companyLocation,
+.contact__companyPhone,
+.contact__companyEmail,
+.contact__companyWebsite {
+  font-size: var(--font-size16);
+}
+
+.contact__infoRight {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+  margin: 0 20px;
+  font-size: var(--font-size14);
+}
+
+.contact__inputName,
+.contact__inputEmail,
+.contact__inputNumber,
+.contact__inputMessage {
+  margin-bottom: 20px;
+  font-weight: var(--font-weight-medium);
+}
+
+.inputInfo {
+  width: 570px;
+  height: 35px;
+  outline: none;
+  border: 1px solid #ddd;
+  font-size: var(--font-size16);
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+.inputMessage {
+  width: 570px;
+  height: 120px;
+  outline: none;
+  border: 1px solid #ddd;
+  font-size: var(--font-size16);
+  margin-top: 10px;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+.contact__sendBtn {
+  width: 85px;
+  height: 30px;
+  border: 1px solid #333;
+  border-radius: 2px;
+  background-color: #446084;
+  color: var(--text-color-white);
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 1230px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

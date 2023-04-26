@@ -1,0 +1,45 @@
+.combo__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 70px auto;
+}
+
+.combo__location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.combo__image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin: 0 30px;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+.combo__title {
+  font-family: "Dancing Script", cursive;
+  font-size: var(--font-size24);
+  font-weight: 700;
+  color: var(--text-color-black);
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px #000000;
+  margin-top: 30px;
+}
+.combo__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1240px) {
+  .combo__location {
+    display: none;
+  }
+}

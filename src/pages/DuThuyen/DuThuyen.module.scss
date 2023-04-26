@@ -1,2 +1,63 @@
-.wrapper {
+.content {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../assets/images/BGfeedback.jpg);
+  margin: 20px;
+}
+
+.duThuyen__item {
+  display: flex;
+  width: 100%;
+  margin: 50px 0;
+}
+.duThuyen__img {
+  width: 468px;
+  height: 262px;
+  border-radius: 6px;
+  border: 0.6px solid #333;
+}
+.duThuyen__content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 40px;
+  line-height: 1.6;
+}
+.duThuyen__name {
+  font-size: var(--font-size20);
+  margin-bottom: 20px;
+}
+
+.starIcon {
+  width: 20px;
+}
+
+.duThuyen__number {
+  font-size: var(--font-size16);
+}
+
+.duThuyen__contactBtn {
+  margin-top: 50px;
+  font-size: var(--font-size16);
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: red;
+  color: var(--text-color-white);
+}
+
+.duThuyen__contactBtn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+  .duThuyen__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .duThuyen__img {
+    width: 100%;
+    height: auto;
+  }
 }
