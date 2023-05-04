@@ -8,7 +8,6 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 const cx = classNames.bind(styles);
 
 function DuThuyenItem({ data }) {
-  console.log(data);
   return (
     <div className={cx("duThuyen__item")}>
       <div>

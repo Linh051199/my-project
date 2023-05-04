@@ -7,13 +7,12 @@
 .footer {
   display: flex;
   justify-content: space-around;
-  padding: 50px 100px;
+  padding: 50px 10px;
 }
 
 .footer__left {
   display: flex;
   flex-direction: column;
-  width: 564px;
   line-height: 2;
   color: var(--text-color-white);
 }
@@ -28,6 +27,7 @@
 .footer__companyWebsite,
 .footer__companyConnect {
   font-size: var(--font-size16);
+  margin-bottom: 10px;
 }
 
 .footer__companyConnectButtons {
@@ -45,9 +45,9 @@
 }
 
 .footer__companyCheckedImg {
-  width: 150px;
   height: 57px;
   background-image: url(../../../assets/images/bct.png);
+  background-repeat: no-repeat;
   margin-top: 20px;
 }
 
@@ -55,7 +55,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 500px;
   line-height: 2;
   color: var(--text-color-white);
 }
@@ -95,7 +94,7 @@
   display: flex;
   align-items: center;
   margin-top: 10px;
-  width: 280px;
+  width: 100%;
   height: 40px;
   border: 1px solid #00f9ff;
   border-radius: 6px;
@@ -135,5 +134,6 @@
 
   .footer__right {
     margin-top: 50px;
+    justify-content: center;
   }
 }

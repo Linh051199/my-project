@@ -9,7 +9,9 @@
   height: 200px;
   align-items: center;
   background-image: url("../../assets/images/banner.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
 }
 .banner {
   position: absolute;
@@ -24,23 +26,7 @@
   color: var(--text-color-white);
   font-size: var(--font-size32);
   font-weight: var(--font-weight-medium);
-  margin: 20px auto;
+  margin: 50px auto;
   text-transform: uppercase;
   text-shadow: 2px 2px 7px #000000;
-}
-
-.banner__linkToHome {
-  font-size: var(--font-size14);
-  color: var(--text-color-white);
-}
-
-.banner__linkToHome:hover {
-  cursor: pointer;
-  opacity: 0.8;
-  color: var(--text-color-white);
-}
-
-.banner__linkTitle {
-  font-size: var(--font-size14);
-  color: var(--text-color-white);
 }
