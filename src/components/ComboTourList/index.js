@@ -22,7 +22,7 @@ function ComboTourList({ data, title, src, width, height }) {
       </div>
       <div className={cx("combo__items")}>
         {data.map((item) => (
-          <Link to={config.routes.comboItem}>
+          <Link key={item.id} to={config.routes.comboItem} state={item}>
             <Combo
               key={item.id}
               title={item.title}

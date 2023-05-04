@@ -4,6 +4,8 @@ import classNames from "classnames/bind";
 import styles from "./Home.module.scss";
 import Combo from "~/components/Combo";
 import Tour from "~/components/Tour";
+import { Link, useNavigate } from "react-router-dom";
+import config from "~/config";
 
 const cx = classNames.bind(styles);
 
@@ -12,6 +14,11 @@ function HomePage() {
   const [dataNinhBinh, setDataNinhBinh] = useState([]);
   const [dataQuangNinh, setDataQuangNinh] = useState([]);
   const [dataTour, setDataTour] = useState([]);
+
+  const navigate = useNavigate();
+  const toComboItem = () => {
+    navigate(config.routes.comboItem, { state: { id: 1, name: "sabaoon" } });
+  };
 
   useEffect(() => {
     fetch("https://instagram-data.onrender.com/phuquoc")
@@ -58,39 +65,54 @@ function HomePage() {
       <div className={cx("home__combo")}>
         <div className={cx("home__combo__list")}>
           {dataPhuQuoc.map((item) => (
-            <Combo
-              key={item.id}
-              src={item.src}
-              className={cx("home__combo__item")}
-              title={item.title}
-              number={item.number}
-              width="330px"
-              height="330px"
-            />
+            <Link key={item.id} to={config.routes.comboItem} state={item}>
+              <Combo
+                key={item.id}
+                src={item.src}
+                className={cx("home__combo__item")}
+                title={item.title}
+                number={item.number}
+                width="337px"
+                height="337px"
+                onClick={() => {
+                  toComboItem();
+                }}
+              />
+            </Link>
           ))}
 
           {dataNinhBinh.map((item) => (
-            <Combo
-              key={item.id}
-              src={item.src}
-              className={cx("home__combo__item")}
-              title={item.title}
-              number={item.number}
-              width="330px"
-              height="330px"
-            />
+            <Link key={item.id} to={config.routes.comboItem} state={item}>
+              <Combo
+                key={item.id}
+                src={item.src}
+                className={cx("home__combo__item")}
+                title={item.title}
+                number={item.number}
+                width="337px"
+                height="337px"
+                onClick={() => {
+                  toComboItem();
+                }}
+              />
+            </Link>
           ))}
 
           {dataQuangNinh.map((item) => (
-            <Combo
-              key={item.id}
-              src={item.src}
-              className={cx("home__combo__item")}
-              title={item.title}
-              number={item.number}
-              width="330px"
-              height="330px"
-            />
+            <Link key={item.id} to={config.routes.comboItem} state={item}>
+              <Combo
+                key={item.id}
+                src={item.src}
+                className={cx("home__combo__item")}
+                title={item.title}
+                number={item.number}
+                width="337px"
+                height="337px"
+                onClick={() => {
+                  toComboItem();
+                }}
+              />
+            </Link>
           ))}
         </div>
       </div>
