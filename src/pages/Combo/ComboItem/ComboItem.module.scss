@@ -125,6 +125,10 @@
 
 .comboItem__imgMore {
   margin: 20px 0;
+  width: 100%;
+}
+.comboItem__imageMore {
+  width: 100%;
 }
 
 .comboItem__priceListItem {
@@ -205,6 +209,7 @@
   padding: 5px;
   border: 1px solid #dddddd;
   border-radius: 4px;
+  --webkit-appearance: none;
 }
 
 .formBook2__dayStartInput {
@@ -219,6 +224,7 @@
   padding: 5px;
   border: 1px solid #dddddd;
   border-radius: 4px;
+  --webkit-appearance: none;
 }
 
 .formBook2__moreInfo {

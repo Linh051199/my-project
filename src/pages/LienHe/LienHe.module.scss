@@ -75,10 +75,31 @@
   }
 }
 
-@media (max-width: 1230px) {
+@media (min-width: 740px) and (max-width: 1023px) {
   .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media (max-width: 739px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .contact__infoRight {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+  }
+  .inputInfo,
+  .inputMessage {
+    width: 90%;
+  }
+  .contact__sendBtn {
+    width: 90%;
   }
 }

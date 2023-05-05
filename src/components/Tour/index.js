@@ -10,7 +10,7 @@ const cx = classNames.bind(styles);
 function Tour({ data, width, height }) {
   return (
     <div className={cx("wrapper")}>
-      <div>
+      <div className={cx("tour__img")}>
         <img
           className={cx("tour__image")}
           src={data.src}

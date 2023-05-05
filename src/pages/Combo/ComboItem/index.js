@@ -124,7 +124,11 @@ function ComboItem() {
               {data.description}
             </div>
             <div className={cx("comboItem__imgMore")}>
-              <img src={data.src} alt="img" />
+              <img
+                className={cx("comboItem__imageMore")}
+                src={data.src}
+                alt="img"
+              />
             </div>
           </div>
           <div id="priceList" className={cx("comboItem__desc__priceList")}>

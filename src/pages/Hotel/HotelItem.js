@@ -25,7 +25,7 @@ function HotelItem({ data }) {
           <strong>Địa chỉ: </strong>
           {data.location}
         </div>
-        <div>
+        <div className={cx("hotel__contact")}>
           <button className={cx("hotel__contactBtn")}>Liên hệ ngay</button>
         </div>
       </div>

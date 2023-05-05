@@ -24,7 +24,7 @@ function DuThuyenItem({ data }) {
         <div className={cx("duThuyen__number")}>
           <strong>Trọng tải: </strong> {data.number} người
         </div>
-        <div>
+        <div className={cx("duThuyen__contact")}>
           <button className={cx("duThuyen__contactBtn")}>Liên hệ ngay</button>
         </div>
       </div>

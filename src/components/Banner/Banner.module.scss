@@ -24,9 +24,19 @@
 
 .banner__title {
   color: var(--text-color-white);
-  font-size: var(--font-size32);
+  font-size: var(--font-size24);
   font-weight: var(--font-weight-medium);
   margin: 50px auto;
   text-transform: uppercase;
   text-shadow: 2px 2px 7px #000000;
+}
+
+@media (max-width: 739px) {
+  .banner__img {
+    height: 100px;
+  }
+  .banner__title {
+    font-size: var(--font-size16);
+    margin: 20px auto;
+  }
 }

@@ -16,10 +16,9 @@
 .sidenav {
   display: flex;
   flex: 1;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100px;
-  margin: 0 100px 0 auto;
 }
 
 .sidenav__item {
@@ -87,15 +86,17 @@
 
 .sivenav__media {
   display: none;
-  position: relative;
+  position: absolute;
   text-align: left;
-  padding: auto 0 auto 20px;
   left: 0px;
+  background-color: #3dc2b5;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .sivenav__mediaBtn {
-  color: var(--text-color-black);
-  font-size: var(--font-size32);
+  color: var(--text-color-white);
+  font-size: var(--font-size24);
   &:hover {
     cursor: pointer;
     opacity: 0.8;
@@ -134,12 +135,11 @@
 
   .sivenav__media {
     display: block;
-    margin-left: 10px;
+    margin-left: 20px;
   }
-  .logo {
-    display: flex;
-    flex: 2;
+  .logo__img {
     justify-content: center;
+    margin: 0;
   }
   .responsive {
     width: 100%;
@@ -165,10 +165,9 @@
     display: block;
     margin-left: 10px;
   }
-  .logo {
-    display: flex;
-    flex: 2;
+  .logo__img {
     justify-content: center;
+    margin: 0;
   }
 }
 
