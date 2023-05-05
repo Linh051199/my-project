@@ -60,13 +60,17 @@
   position: absolute;
   top: 0;
   right: 0;
-  font-size: var(--font-size40);
-  color: var(--text-color-black);
-  padding: 10px;
-}
-.sidenav__responsiveCloseBtn:hover {
-  cursor: pointer;
-  opacity: 0.8;
+  font-size: var(--font-size32);
+  color: var(--text-color-white);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #3dc2b5;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 }
 
 .sidenav__responsiveItem {

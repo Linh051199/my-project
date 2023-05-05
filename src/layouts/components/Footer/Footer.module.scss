@@ -65,7 +65,8 @@
 }
 
 .footer__hotLine,
-.footer__email {
+.footer__email,
+.footer__work {
   font-size: var(--font-size16);
   margin-bottom: 10px;
 }
@@ -73,11 +74,6 @@
 .footer__number {
   font-size: var(--font-size20);
   color: #00f9ff;
-}
-
-.footer__work {
-  font-size: var(--font-size16);
-  margin-bottom: 10px;
 }
 
 .footer__workTime,
@@ -107,10 +103,10 @@
   font-size: var(--font-size18);
   color: var(--text-color-white);
   background-color: transparent;
-}
 
-.footer__input:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 .footer__sendEmailIcon {
@@ -124,6 +120,7 @@
   }
 }
 
+//responsive mobile and tablet
 @media (max-width: 1200px) {
   .footer {
     display: flex;

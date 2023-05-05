@@ -43,13 +43,13 @@
   border: 1px solid #333;
   background-color: red;
   color: var(--text-color-white);
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 }
 
-.duThuyen__contactBtn:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
+// responsive
 @media (max-width: 1023px) {
   .duThuyen__item {
     display: flex;
