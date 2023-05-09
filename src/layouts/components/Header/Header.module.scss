@@ -95,16 +95,18 @@
   left: 0px;
   background-color: #3dc2b5;
   border-radius: 5px;
-  padding: 5px;
-}
+  margin-left: 20px;
+  padding: 10px;
 
-.sivenav__mediaBtn {
-  color: var(--text-color-white);
-  font-size: var(--font-size24);
   &:hover {
     cursor: pointer;
     opacity: 0.8;
   }
+}
+
+.sivenav__mediaBtn {
+  color: var(--text-color-white);
+  font-size: var(--font-size18);
 }
 
 .sidenav__responsiveInput:checked ~ .responsive {
@@ -139,7 +141,6 @@
 
   .sivenav__media {
     display: block;
-    margin-left: 20px;
   }
   .logo__img {
     justify-content: center;
@@ -167,7 +168,6 @@
 
   .sivenav__media {
     display: block;
-    margin-left: 10px;
   }
   .logo__img {
     justify-content: center;

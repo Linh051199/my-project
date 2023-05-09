@@ -21,7 +21,6 @@ const cx = classNames.bind(styles);
 function ComboItem() {
   const location = useLocation();
   const data = location.state;
-  console.log({ data });
 
   const refNote = useRef(null);
   const refBook = useRef(null);
