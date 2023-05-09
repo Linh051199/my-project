@@ -3,14 +3,12 @@ import classNames from "classnames/bind";
 
 import styles from "./ComboTourList.module.scss";
 import Combo from "~/components/Combo";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import config from "~/config";
 
 const cx = classNames.bind(styles);
 
 function ComboTourList({ data, title, src }) {
-  const navigate = useNavigate();
-
   return (
     <div className={cx("combo__list")}>
       <div className={cx("combo__location")}>
