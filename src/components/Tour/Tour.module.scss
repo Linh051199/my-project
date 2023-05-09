@@ -3,6 +3,7 @@
   justify-content: space-around;
   width: 100%;
   height: 300px;
+  margin-top: 100px;
 }
 
 .tour__image {
@@ -52,6 +53,7 @@
   color: #db2128;
   font-size: var(--font-size18);
   font-weight: var(--font-weight-medium);
+  margin-right: 20px;
 }
 
 .tour__infoBtn {
@@ -73,7 +75,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     height: 100%;
   }
   .tour__img {
@@ -103,7 +105,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-bottom: 40px;
     height: 100%;
   }
   .tour__image {

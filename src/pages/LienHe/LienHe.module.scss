@@ -1,16 +1,14 @@
 .content {
   display: flex;
-  justify-content: center;
-  margin: 50px 0 100px 0;
+  justify-content: space-between;
+  margin: 50px 50px;
 }
 
 .contact__infoLeft {
   display: flex;
   flex-direction: column;
   line-height: 2.5;
-  margin: 0 20px;
   color: #555;
-  margin-bottom: 50px;
 }
 
 .contact__companyName {
@@ -28,8 +26,8 @@
   display: flex;
   flex-direction: column;
   line-height: 1.6;
-  margin: 0 20px;
   font-size: var(--font-size14);
+  margin-bottom: 50px;
 }
 
 .contact__inputName,
@@ -79,9 +77,19 @@
 @media (min-width: 740px) and (max-width: 1023px) {
   .content {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
     justify-content: center;
+  }
+  .contact__infoLeft {
+    display: none;
+  }
+  .contact__infoRight {
+    width: 100%;
+    align-items: center;
+  }
+  .contact__sendBtn {
+    width: 480px;
   }
 }
 
@@ -89,20 +97,26 @@
 @media (max-width: 739px) {
   .content {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
     width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .contact__infoLeft {
+    display: none;
   }
   .contact__infoRight {
     width: 100%;
     margin: 0;
-    padding: 0 20px;
+    margin: 50px 0;
   }
+
   .inputInfo,
   .inputMessage {
-    width: 90%;
+    width: 100%;
   }
   .contact__sendBtn {
-    width: 90%;
+    width: 100%;
   }
 }

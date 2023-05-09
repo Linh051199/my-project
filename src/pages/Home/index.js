@@ -63,58 +63,64 @@ function HomePage() {
       <div className={cx("home__combo__hashtag")}>• • • VIETSTARTOUR • • •</div>
       <div className={cx("home__combo__title")}>COMBO DU LỊCH</div>
       <div className={cx("home__combo")}>
-        <div className={cx("home__combo__list")}>
-          {dataPhuQuoc.map((item) => (
-            <Link key={item.id} to={config.routes.comboItem} state={item}>
-              <Combo
-                key={item.id}
-                src={item.src}
-                className={cx("home__combo__item")}
-                title={item.title}
-                number={item.number}
-                width="337px"
-                height="337px"
-                onClick={() => {
-                  toComboItem();
-                }}
-              />
-            </Link>
-          ))}
+        {dataPhuQuoc.map((item) => (
+          <Link
+            className={cx("home__combo__item")}
+            key={item.id}
+            to={config.routes.comboItem}
+            state={item}
+          >
+            <Combo
+              key={item.id}
+              src={item.src}
+              title={item.title}
+              number={item.number}
+              width="330px"
+              // height="330px"
+              onClick={() => {
+                toComboItem();
+              }}
+            />
+          </Link>
+        ))}
 
-          {dataNinhBinh.map((item) => (
-            <Link key={item.id} to={config.routes.comboItem} state={item}>
-              <Combo
-                key={item.id}
-                src={item.src}
-                className={cx("home__combo__item")}
-                title={item.title}
-                number={item.number}
-                width="337px"
-                height="337px"
-                onClick={() => {
-                  toComboItem();
-                }}
-              />
-            </Link>
-          ))}
+        {dataNinhBinh.map((item) => (
+          <Link
+            className={cx("home__combo__item")}
+            key={item.id}
+            to={config.routes.comboItem}
+            state={item}
+          >
+            <Combo
+              key={item.id}
+              src={item.src}
+              title={item.title}
+              number={item.number}
+              onClick={() => {
+                toComboItem();
+              }}
+            />
+          </Link>
+        ))}
 
-          {dataQuangNinh.map((item) => (
-            <Link key={item.id} to={config.routes.comboItem} state={item}>
-              <Combo
-                key={item.id}
-                src={item.src}
-                className={cx("home__combo__item")}
-                title={item.title}
-                number={item.number}
-                width="337px"
-                height="337px"
-                onClick={() => {
-                  toComboItem();
-                }}
-              />
-            </Link>
-          ))}
-        </div>
+        {dataQuangNinh.map((item) => (
+          <Link
+            className={cx("home__combo__item")}
+            key={item.id}
+            to={config.routes.comboItem}
+            state={item}
+          >
+            <Combo
+              key={item.id}
+              src={item.src}
+              title={item.title}
+              number={item.number}
+              onClick={() => {
+                toComboItem();
+              }}
+            />
+          </Link>
+        ))}
       </div>
 
       <div className={cx("home__tour")}>

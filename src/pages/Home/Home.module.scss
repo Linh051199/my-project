@@ -22,15 +22,16 @@
   color: #555555;
 }
 
-.home__combo__list {
+.home__combo {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 40px calc((100% - (350px * 3)) / 3);
+  justify-content: space-between;
+  margin: 0 50px;
+  padding-bottom: 20px;
 }
 
 .home__combo__item {
-  flex: 0 0 350px;
+  width: 30%;
 }
 
 .home__tour {
@@ -38,6 +39,7 @@
   background-image: url("../../assets/images/bien.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 30px;
 }
 
 .home__tour__list {
@@ -45,8 +47,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px calc((100% - (700px * 2)) / 2);
-  margin: 30px;
+  margin: 0 50px;
 }
 
 .home__tour__item {
@@ -54,12 +55,22 @@
   width: 600px;
 }
 
-.home__GoHeader {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+//responsive tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+  .home__combo__item {
+    width: 100%;
+  }
 }
 
-.home__btnGoHeader {
-  font-size: var(--font-size32);
+// responsive mobile
+@media (max-width: 739px) {
+  .home__combo__item {
+    width: 100%;
+  }
+  .home__combo {
+    margin: 0;
+  }
+  .home__tour__list {
+    margin: 0;
+  }
 }

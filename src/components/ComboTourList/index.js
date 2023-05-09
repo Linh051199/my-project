@@ -8,11 +8,8 @@ import config from "~/config";
 
 const cx = classNames.bind(styles);
 
-function ComboTourList({ data, title, src, width, height }) {
+function ComboTourList({ data, title, src }) {
   const navigate = useNavigate();
-  const toComboItem = () => {
-    navigate(config.routes.comboItem, { state: { id: 1, name: "sabaoon" } });
-  };
 
   return (
     <div className={cx("combo__list")}>
@@ -22,17 +19,17 @@ function ComboTourList({ data, title, src, width, height }) {
       </div>
       <div className={cx("combo__items")}>
         {data.map((item) => (
-          <Link key={item.id} to={config.routes.comboItem} state={item}>
+          <Link
+            className={cx("combo__item")}
+            key={item.id}
+            to={config.routes.comboItem}
+            state={item}
+          >
             <Combo
               key={item.id}
               title={item.title}
               number={item.number}
               src={item.src}
-              width={width}
-              height={height}
-              onClick={() => {
-                toComboItem();
-              }}
             />
           </Link>
         ))}

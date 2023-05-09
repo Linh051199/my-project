@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 70px auto;
+  margin: 50px auto;
 }
 
 .combo__location {
@@ -14,10 +14,9 @@
 }
 
 .combo__image {
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  margin: 0 30px;
   &:hover {
     cursor: pointer;
     opacity: 0.8;
@@ -34,13 +33,24 @@
 }
 .combo__items {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.combo__item {
+  width: 30%;
 }
 
 //responsive display
-@media (max-width: 1240px) {
+
+@media (max-width: 1023px) {
   .combo__location {
     display: none;
+  }
+  .combo__item {
+    width: 100%;
+  }
+  .combo__items {
+    margin: 0;
   }
 }
